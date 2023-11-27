@@ -7,7 +7,7 @@ resource "aws_ssm_parameter" "params" {
 
 variable "parameters" {
     default = [
-      {name = "prod.rds.master_password", value = "expenseprod1234", type = "Securestring"}, #here each value is a map
+      {name = "prod.rds.master_password", value = "expenseprod1234", type = "SecureString"}, #here each value is a map
       {name = "prod.rds.master_username", value = "expense", type = "String"}
     ]
 }
