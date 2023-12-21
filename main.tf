@@ -19,7 +19,7 @@ variable "parameters" {
 
       { name = "jenkins_password", value = "admin1234", type = "SecureString" },
       { name = "artifactory_username", value = "admin", type = "String" },
-      { name = "artifactory_password", value = "Dontnow@29", type = "String" }
+      { name = "artifactory_password", value = "Dontnow29", type = "String" }
 
     ]
 }
