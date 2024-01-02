@@ -3,7 +3,6 @@ resource "aws_ssm_parameter" "params" {
   name  = var.parameters[count.index].name 
   type  = var.parameters[count.index].type
   value = var.parameters[count.index].value
-  overwrite = true
   key_id = "arn:aws:kms:us-east-1:851512651356:key/a916f8da-24bf-448f-af0a-7f41d920fce0"
 }
 
@@ -16,7 +15,7 @@ variable "parameters" {
       { name = "prod.backend.app_version", value = "1.0.1", type = "String" },
       { name = "prod.frontend.app_version", value = "1.0.2", type = "String" },
 
-      { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.rdevopsb73.online/", type = "String" },
+      { name = "dev.expense.frontend.backend_url", value = "http://backend-dev.vaishnavidevops.online/", type = "String" },
 
       { name = "jenkins_password", value = "admin1234", type = "SecureString" },
       { name = "artifactory_username", value = "admin", type = "String" },
